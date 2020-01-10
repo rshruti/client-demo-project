@@ -13,7 +13,7 @@ public class Calculator {
    }
    
    public int sub(int number1, int number2) {
-      return number1 - ;
+      return number1 - number2;
    }
    
    public int mul(int number1, int number2) {
