@@ -4,7 +4,7 @@
 	<artifactId>client-demo-project</artifactId>
 	<packaging>war</packaging>
 	<version>20.0.4-SNAPSHOT</version>
-	<name>client-demo-project</name>
+	<name>client demo project</name>
 	<url>http://maven.apache.org</url>
 	
 	<dependencies>
