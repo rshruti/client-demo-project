@@ -15,5 +15,5 @@ RUN value=`cat conf/server.xml` && echo "${value//8080/8090}" >| conf/server.xml
 COPY tomcat-users.xml conf/tomcat-users.xml
 COPY context.xml webapps/manager/META-INF/
 COPY context-host.xml webapps/host-manager/META-INF/context.xml                                     
-COPY target/*.war /webapps/Mytomcat.war
+COPY target/*.war webapps/Mytomcat.war
 CMD ["/opt/tomcat/bin/catalina.sh", "run"]
