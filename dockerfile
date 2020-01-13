@@ -14,5 +14,7 @@ RUN java -version
 RUN value=`cat conf/server.xml` && echo "${value//8080/8090}" >| conf/server.xml
 COPY tomcat-users.xml conf/tomcat-users.xml
 COPY context.xml webapps/manager/META-INF/
-COPY context-host.xml webapps/host-manager/META-INF/context.xml                                     
+COPY context-host.xml webapps/host-manager/META-INF/context.xml
+WORKDIR /var/jenkins_home/workspace/docker-on-docker/target/
+COPY *.war /opt/tomcat/webapps
 CMD ["/opt/tomcat/bin/catalina.sh", "run"]
