@@ -32,8 +32,8 @@
 	<distributionManagement>
         <repository>
             <id>deployment</id>
-            <name>Internal Releases</name>
-            <url>http://34.234.69.116:8081//nexus/content/repositories/releases/</url>
+            <name>release</name>
+            <url>http://34.234.69.116:8081//nexus/content/repositories/release/</url>
 			<uniqueVersion>false</uniqueVersion>
         </repository>
         <snapshotRepository>
