@@ -33,13 +33,13 @@
         <repository>
             <id>deployment</id>
             <name>Internal Releases</name>
-            <url>http://34.201.44.1:8081/nexus/content/repositories/client-demo-project/</url>
+            <url>http://54.174.165.247:8081/repository/client-demo-project/</url>
 			<uniqueVersion>false</uniqueVersion>
         </repository>
         <snapshotRepository>
             <id>deployment</id>
             <name>Internal Snapshot Releases</name>
-                     <url>http://34.201.44.1:8081/nexus/content/repositories/client-demo-project/</url>
+                     <url>http://54.174.165.247:8081/repository/client-demo-project/</url>
 			<uniqueVersion>false</uniqueVersion>
         </snapshotRepository>
     </distributionManagement>
