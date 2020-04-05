@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: mysql-pv
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: generic
+  awsElasticBlockStore:
+    volumeID: vol-02a28a9019b88ca16
+    fsType: ext4
